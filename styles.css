@@ -111,6 +111,40 @@ section p {
     color: #555;
 }
 
+article {
+    margin-bottom: 2rem;
+}
+
+/* Read more button */
+.read-more {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(102, 126, 234, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.read-more:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(102, 126, 234, 0.35);
+    opacity: 0.95;
+}
+
+.read-more:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.25);
+}
+
+.read-more:focus-visible {
+    outline: 3px solid rgba(102, 126, 234, 0.5);
+    outline-offset: 2px;
+}
+
 /* Footer styles */
 footer {
     background-color: #2c3e50;
